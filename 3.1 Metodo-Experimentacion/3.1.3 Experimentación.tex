@@ -1,0 +1,60 @@
+
+
+\subsubsection{Desarrollo del Prototipo}
+
+\textbf{Estructura Física:}
+\begin{itemize}
+    \item \textbf{Diseño de la estructura:} Nos proponemos diseñar una estructura robusta que soporte los contenedores y los componentes electrónicos. 
+    La estructura debe ser de fácil acceso para los usuarios, permitiendo que los materiales sean presentados a la cámara.
+
+    \item \textbf{Ubicación de la Cámara:} Esta parte se trata de instalar el ESP32 CAM en una posición elevada, asegurando que tenga un campo de visión claro para capturar el material que la persona va a presentar.
+\end{itemize}
+
+
+\subsubsection{Integración Electrónica:}
+\begin{itemize}
+    \item \textbf{Conexiones:} Conectamos la ESP32 CAM a una fuente de alimentación adecuada y a los servomotores con la principal tarea de abrir las compuertas.
+    \item \textbf{Sensores ultrasonicos:} Usamos sensores ultrasónicos para detectar cuando el usuario presenta un material. Esto nos ayuda a que la cámara esté activa y lista para capturar la imagen del material.
+\end{itemize}
+
+
+\subsubsection{Programación del Sistema}
+
+\textbf{Desarrollo del Algoritmo de Reconocimiento:}
+\begin{itemize}
+    \item \textbf{Recopilación de Datos:}
+    \begin{itemize}
+        \item Se trata de recopilar un DataSet de Kaggle donde se tengan imágenes de cartón, papel y plástico en diversas condiciones de iluminación y ángulos. Esto nos da la oportunidad de que el modelo sea robusto y pueda manejar variaciones en el entorno real.
+        \item Luego, etiquetaremos las imágenes para crear un conjunto de datos que se utilizará en el entrenamiento del modelo de reconocimiento.
+    \end{itemize}
+    
+    \item \textbf{Utilizar Trasnfer Learning:}
+    \begin{itemize}
+        \item Tomaremos una cnn pre-entrenada y aplicaremos técnicas de visión por computadora con el conjunto de datos recopilado. Este proceso puede incluir la validación cruzada para asegurar que el modelo no esté sobreajustado.
+        \item Realizaremos pruebas de precisión del modelo con un conjunto de imágenes no utilizadas durante el entrenamiento para evaluar su rendimiento y comportamiento.
+    \end{itemize}
+    
+    \item \textbf{Control del Hardware:}
+    \begin{itemize}
+        \item \textbf{Lógica de Control:}
+        \begin{itemize}
+            \item Se trata de programar la lógica que controlará la activación del reconocimiento de imágenes cuando el sensor ultrasonico detecte que un usuario está presentando un material.
+            \item Una vez que se identifica el material, se activa la compuerta correspondiente, utilizando los servomotores.
+        \end{itemize}
+        
+        \item \textbf{Sistema de Retroalimentación:}
+        \begin{itemize}
+            \item Implementaremos un sistema de retroalimentación visual (por ejemplo, luces LED) que indique al usuario si la clasificación fue correcta o incorrecta. Si el material es reconocido correctamente, se abrirá la compuerta; si no, se podrá mostrar un mensaje en una pantalla o con luces que indiquen que el material no fue clasificado.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\subsubsection{Interacción del Usuario}
+
+\textbf{Proceso de Uso:}
+\begin{itemize}
+    \item El usuario se acercará al basurero inteligente y presentará el material al módulo ESP32 CAM.
+    \item El sistema activará la cámara para tomar una imagen del material.
+    \item El algoritmo analizará la imagen y, tras identificar correctamente el material, la compuerta correspondiente se abrirá para que el usuario deposite el residuo.
+    \item En caso de que el material no sea reconocido, se proporcionará retroalimentación al usuario sobre la incorrecta clasificación con el uso del Buzzer.
+\end{itemize}

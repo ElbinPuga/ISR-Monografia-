@@ -1,0 +1,72 @@
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Recurso} & \textbf{Cantidad} & \textbf{Costo Est(dls)} \\
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Recursos Humanos}} \\
+        \hline
+        Ingeniero en electrónica (diseño y programación) & 1 & 500 \\
+        \hline
+        Técnico en ensamblaje & 1 & 100 \\
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Recursos Económicos}} \\
+        \hline
+        Placa Arduino UNO R3 & 1 & 16.99\\
+        \hline
+        XIAO ESP32 S3 Sense  & 1 & 23.99 \\
+        \hline
+        Módulo de cámara OV2640 & 1 & 8.99\\
+        \hline
+        Sensor ultrasonico & 3 & 6.99 \\
+        \hline
+        mini-Servomotores & 3 & 6.99 \\
+        \hline
+        Deposito de basura & 1 & 8.99 \\
+        \hline
+        Fuente de alimentación & 1 & 5.00 \\
+        \hline
+        Cables y conectores,LEDS & Varios & 9.99 \\
+        \hline
+        ProtoBoard & 2 & 6.96 \\
+        \hline
+        Buzzer & 1 & 0.70\\
+        \hline
+        Pantalla LED & 1 & 3.99\\
+        \hline
+        \multicolumn{3}{|c|}{\textbf{Recursos Tecnológicos}} \\
+        \hline
+        Computadora para desarrollo y programación & 1 & (ya disponible)\\
+        \hline
+        Software de diseño y programación & 2 & 0 (de uso libre) \\
+        \hline
+        \textbf{Total} & & \textbf{699.58} \\
+        \hline
+    \end{tabular}
+    \caption{Presupuesto Real del Proyecto}{Precios referencia:~\cite{link_miniservos,link_arduino,link_buzzer,link_conectores_cables,link_protoboard}}
+    \label{tab:presupuesto_real}
+\end{table}
+
+\begin{itemize}
+    \item \textbf{Recursos Humanos}  
+    Los dos roles incluidos, un ingeniero en electrónica para el diseño y programación, y un técnico en ensamblaje son sumamente necesarios ya que el proyecto requiere habilidades especializadas para integrar tanto el hardware como el software. El ingeniero es fundamental en esta fase, pues diseñará el sistema de control y programación de los sensores y actuadores. El técnico de ensamblaje asegurará que los componentes se monten correctamente, lo cual es crucial para pruebas y un funcionamiento efectivo.
+
+    \item \textbf{Recursos Económicos}  
+    Los componentes electrónicos detallados, como la placa Arduino UNO R3, el microcontrolador XIAO ESP32 S3 Sense y el módulo de cámara OV2640, apuntan a un sistema que necesita procesar imágenes y posiblemente tomar decisiones automáticas en tiempo real. Este conjunto de piezas sugiere un sistema de clasificación de objetos, tal vez para separar materiales reciclables, como se deduce del "Depósito de basura".
+
+    \begin{itemize}
+        \item \textbf{Sensores y Actuadores}: La presencia de sensores ultrasónicos indica que el sistema debe detectar proximidad, activando la cámara o algún mecanismo solo cuando un usuario presenta un objeto.
+        \item \textbf{Servomotores y Fuente de alimentación}: Los servomotores se utilizan para abrir compuertas o mover componentes en función de lo detectado.
+        \item \textbf{Conectores y Cables}: Estos aseguran que todos los componentes se comuniquen correctamente y tengan la energía necesaria.
+    \end{itemize}
+
+    El hecho de incluir un buzzer y una pantalla LED se trata de un mecanismo de retroalimentación para el usuario, posiblemente para indicar si un material ha sido clasificado correctamente o no.
+
+    \item \textbf{Recursos Tecnológicos}  
+    La necesidad de una computadora y software libre para el desarrollo y programación refleja un esfuerzo por minimizar costos al aprovechar recursos disponibles. La computadora es necesaria para desarrollar y cargar el código al microcontrolador, mientras que el software libre como Arduino IDE o plataformas de Machine Learning de código abierto permiten reducir los costos sin limitar las capacidades del prototipo.
+
+    \item \textbf{Total del Presupuesto}  
+    El monto final de 699.58 USD es razonable para un prototipo experimental con múltiples componentes y tecnología de detección, clasificación, y retroalimentación visual/auditiva. Al tratarse de un presupuesto tentativo, refleja el gasto en una configuración mínima viable para validar la funcionalidad del sistema y probar su eficacia.
+
+    Además, es un monto que cualquier empresa privada podría comprar o incluso patrocinar.
+\end{itemize}

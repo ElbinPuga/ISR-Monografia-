@@ -1,0 +1,124 @@
+\documentclass{extbook}
+\usepackage[papersize={8.5in,11in},top=1in,bottom=1in]{geometry}
+\RequirePackage{fix-cm}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{fullpage}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tcolorbox}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{pdfpages}
+%\usepackage{fancyhdr}
+
+%renombro de ingles a español
+\renewcommand{\contentsname}{Contenido}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\listfigurename}{Lista de figuras}
+\renewcommand{\bibname}{Bibliografía}
+\renewcommand{\tablename}{Tabla}
+\renewcommand{\listtablename}{Lista de tablas}
+
+
+\usepackage[fontsize=13.5pt]{fontsize}
+\setlength{\parindent}{0pt}
+
+\titleformat{\chapter}[display]
+  {\bfseries\huge} % Estilo del título
+  {\hfill\Large} % Alineación a la derecha
+  {3ex} % Espaciado entre el número del capítulo y el título
+  {\vspace{-5cm}\titlerule\vspace{1.5ex}\hfill} % Regla arriba y alineación del título a la derecha
+  [\vspace{1ex}\titlerule] % Regla debajo del título
+
+
+  \makeatletter
+  \patchcmd{\chapter}
+    {\if@openright\cleardoublepage\else\clearpage\fi}
+    {\clearpage}
+    {}{}
+  \makeatother
+
+  \definecolor{codegreen}{rgb}{0,0.6,0}
+  \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+  \definecolor{codepurple}{rgb}{0.58,0,0.82}
+  \definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+   
+  \lstdefinestyle{mystyle}{
+      backgroundcolor=\color{backcolour},   
+      commentstyle=\color{codegreen},
+      keywordstyle=\color{magenta},
+      numberstyle=\tiny\color{codegray},
+      stringstyle=\color{codepurple},
+      basicstyle=\footnotesize,
+      breakatwhitespace=false,         
+      breaklines=true,                 
+      captionpos=b,                    
+      keepspaces=true,                 
+      numbers=left,                    
+      numbersep=5pt,                  
+      showspaces=false,                
+      showstringspaces=false,
+      showtabs=false,                  
+      tabsize=2
+  }
+   
+  \lstset{style=mystyle}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+\mainmatter
+\setcounter{secnumdepth}{4}
+
+\begin{document}
+\input{Portada/portada.tex}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+%CAPITULO 2 DE PRISCILA
+\chapter{Capítulo 2: Marco Teórico}
+\section{Área de Investigación}
+\input{2.1 Area de Investigacion/Inteligencia artificial en el reciclaje.tex}
+\input{2.1 Area de Investigacion/ard_esp32.tex}
+\input{2.1 Area de Investigacion/sistemas_clas_aut.tex}
+\input{2.1 Area de Investigacion/iot.tex}
+\input{2.1 Area de Investigacion/campoApl.tex}
+\input{2.1 Area de Investigacion/futuro_tema.tex}
+\section{Proyectos similares}
+\input{2.2 Proyectos SImilares/proyectos_similares.tex}
+\section{Tecnologías De Desarrollo}
+\input{2.3 Tecnologias de desarrollo/tecnologias.tex}
+
+%CAPITULO 3 
+\chapter{Capítulo 3: Propuesta del Proyecto}
+\section{Metodo-Experimentación}
+\subsection{Tipo y alcance de la investigación}
+\input{3.1 Metodo-Experimentacion/alcance.tex}
+\subsection{Observación}
+\input{3.1 Metodo-Experimentacion/3.1.1 Observación.tex}
+\subsection{Planteamiento de Hipótesis}
+\input{3.1 Metodo-Experimentacion/3.1.2 Planteamiento de hipotesis.tex}
+\subsection{Experimentación}
+\input{3.1 Metodo-Experimentacion/3.1.3 Experimentación.tex}
+\subsection{Análisis de Datos}
+\input{3.1 Metodo-Experimentacion/3.1.4 Analisis de Datos.tex}
+\subsection{Análisis y conclusiones}
+\input{3.1 Metodo-Experimentacion/3.1.5 Conclusión.tex}
+\section{Escenario De Aplicación}
+\input{3.2 Escenario de Aplicacion/3.2.1 Contexto Social.tex}
+\section{Cronograma de Actividades}
+\input{3.3 Cronograma de actividades/3.3.1 Fases del proyecto.tex}
+\section{Presupuesto Real}
+\input{3.4 Presupuesto real/3.4.1 Desglose Detallado.tex}
+\section{Diseño conceptual}
+\input{3.5 Diseño Conceptual/diseño.tex}
+\input{Referencias.tex}
+\end{document}
