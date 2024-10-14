@@ -1,9 +1,9 @@
 # Fdb version 4
-["pdflatex"] 1728905992.5155 "c:/Users/arlan/Workspace/Latex/ISR/monografia/ISR-Monografia-Cap1/informe.tex" "informe.pdf" "informe" 1728905996.07749 0
+["pdflatex"] 1728916244.87816 "c:/Users/arlan/Workspace/Latex/ISR/monografia/ISR-Monografia-Cap1/informe.tex" "informe.pdf" "informe" 1728916250.01657 0
   "1.Cap1/1.1Antecedentes.tex" 1728905557 1364 814f2bd333ab8e9fbe403289bcd4e97d ""
   "1.Cap1/1.2.Identificación_del_problema.tex" 1728905551 1481 c1a609d858bb66f711f42f3d6177ee25 ""
-  "1.Cap1/1.3.Objetivo_General.tex" 1728905610 267 f5cab67ebc4835ea16ead61b824a5225 ""
-  "1.Cap1/1.4.Objetivos_Especificos.tex" 1728905674 282 14b7e58513180352b00e54a8803fff07 ""
+  "1.Cap1/1.3.Objetivo_General.tex" 1728916243 896 6eaf84c8405a548d863741d1ad3cc601 ""
+  "1.Cap1/1.4.Objetivos_Especificos.tex" 1728915728 671 5575fbeca5b179561005d03bdb300931 ""
   "1.Cap1/1.5.Justificacion.tex" 1728905985 915 8315f5d6ba8938c3ca1a23f6b6bf4c00 ""
   "1.Cap1/1.6.Delimitaciones.tex" 1728905711 547 904843c510774327370f7e04104bba3d ""
   "2.1 Area de Investigacion/Inteligencia artificial en el reciclaje.tex" 1728869825 4116 8daf3190f3ca4b00e5ff8a0391d0b17b ""
@@ -225,12 +225,12 @@
   "Portada/portada.tex" 1728869825 1457 dd042abdb8b03e93fabf8c281b6fdbf1 ""
   "Referencias.tex" 1728905224 10652 a6f8d74c021585c46d024d85b4baaa7a ""
   "c:/Users/arlan/Workspace/Latex/ISR/monografia/ISR-Monografia-Cap1/informe.tex" 1728905988 4448 98ebf568e5f8c0e5603fddaf2d6e42ef ""
-  "informe.aux" 1728905995 14178 df269c1a231e6d64cb38cd5ac4936c4b "pdflatex"
-  "informe.lof" 1728905995 2072 d837fc4161a48a9311204750012de70e "pdflatex"
-  "informe.lot" 1728905995 562 12c298ebf67c8970e9f19ee67e31791f "pdflatex"
-  "informe.out" 1728905995 10708 38527d37a36216b6f7927a2a34b9d2d4 "pdflatex"
+  "informe.aux" 1728916249 14178 5b334974a2566fd4576807fa05e58b4b "pdflatex"
+  "informe.lof" 1728916249 2072 d837fc4161a48a9311204750012de70e "pdflatex"
+  "informe.lot" 1728916249 562 12c298ebf67c8970e9f19ee67e31791f "pdflatex"
+  "informe.out" 1728916249 10708 38527d37a36216b6f7927a2a34b9d2d4 "pdflatex"
   "informe.tex" 1728905988 4448 98ebf568e5f8c0e5603fddaf2d6e42ef ""
-  "informe.toc" 1728905995 5458 f69820e3ae5bbb50d34b8f082ae1d7dc "pdflatex"
+  "informe.toc" 1728916249 5458 9423ec15944f8ce4e1289bd159f40009 "pdflatex"
   (generated)
   "informe.aux"
   "informe.lof"
